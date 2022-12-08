@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-xs-12">
+            <div class="panel-body">
+                <div class="text-center">
+                    <div class="list-group-item-heading">
+                        <div class="panel-body" *ngFor="let todo of todos; let index = index;">
+                            <div class="pull-left my-3" id="todoName">
+                                <span class="text-uppercase mx-3">{{ todo }}</span>
+                                <button class="btn btn-danger" type="button" (click)="onDelete(index)">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+    </div>
+</div>
