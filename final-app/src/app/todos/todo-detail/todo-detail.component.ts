@@ -7,17 +7,17 @@ import { Todo } from '../todo.model';
   styleUrls: ['./todo-detail.component.css']
 })
 export class TodoDetailComponent implements OnInit {
-  public todos = [];
-  public newTodo;
+  // public todos = [];
+  // public newTodo;
 
-  public addToList() {
-    if(this.newTodo == ''){
+  // public addToList() {
+  //   if(this.newTodo == ''){
 
-    }else {
-      this.todos.push(this.newTodo);
-      this.newTodo = '';
-    }
-  }
+  //   }else {
+  //     this.todos.push(this.newTodo);
+  //     this.newTodo = '';
+  //   }
+  // }
   constructor() { }
 
   ngOnInit(): void {

@@ -2,10 +2,12 @@
     <div class="col-xs-12">
             <div class="panel-body">
                 <div class="text-center">
-                    <div class="list-group-item-heading">
-                        <span class="text-uppercase">Todo: </span>
-                        <input type="text" max="255" size="120" id="todo">
-                        <button class="btn btn-success" (click)="addToList(todo)">Add</button>
+                    <div class="list-group-item-heading">                       
+                        <form action="localhost:3000/todo" method="post">
+                            <label for="todo">Todo:</label>
+                            <input type="text" max="255" size="120" name="todo" id="todo">
+                            <button class="btn btn-success" >Add</button>
+                        </form>
                     </div>
                 </div>
             </div>
